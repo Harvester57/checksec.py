@@ -241,36 +241,39 @@ test = ["pytest (>=6)"]
 
 [[package]]
 name = "flake8"
-version = "5.0.4"
+version = "7.2.0"
 description = "the modular source code checker: pep8 pyflakes and co"
 optional = false
-python-versions = ">=3.6.1"
+python-versions = ">=3.9"
 groups = ["dev"]
 files = [
-    {file = "flake8-5.0.4-py2.py3-none-any.whl", hash = "sha256:7a1cf6b73744f5806ab95e526f6f0d8c01c66d7bbe349562d22dfca20610b248"},
-    {file = "flake8-5.0.4.tar.gz", hash = "sha256:6fbe320aad8d6b95cec8b8e47bc933004678dc63095be98528b7bdd2a9f510db"},
+    {file = "flake8-7.2.0-py2.py3-none-any.whl", hash = "sha256:93b92ba5bdb60754a6da14fa3b93a9361fd00a59632ada61fd7b130436c40343"},
+    {file = "flake8-7.2.0.tar.gz", hash = "sha256:fa558ae3f6f7dbf2b4f22663e5343b6b6023620461f8d4ff2019ef4b5ee70426"},
 ]
 
 [package.dependencies]
 mccabe = ">=0.7.0,<0.8.0"
-pycodestyle = ">=2.9.0,<2.10.0"
-pyflakes = ">=2.5.0,<2.6.0"
+pycodestyle = ">=2.13.0,<2.14.0"
+pyflakes = ">=3.3.0,<3.4.0"
 
 [[package]]
 name = "flake8-bugbear"
-version = "20.1.4"
+version = "24.12.12"
 description = "A plugin for flake8 finding likely bugs and design problems in your program. Contains warnings that don't belong in pyflakes and pycodestyle."
 optional = false
-python-versions = ">=3.6"
+python-versions = ">=3.8.1"
 groups = ["dev"]
 files = [
-    {file = "flake8-bugbear-20.1.4.tar.gz", hash = "sha256:bd02e4b009fb153fe6072c31c52aeab5b133d508095befb2ffcf3b41c4823162"},
-    {file = "flake8_bugbear-20.1.4-py36.py37.py38-none-any.whl", hash = "sha256:a3ddc03ec28ba2296fc6f89444d1c946a6b76460f859795b35b77d4920a51b63"},
+    {file = "flake8_bugbear-24.12.12-py3-none-any.whl", hash = "sha256:1b6967436f65ca22a42e5373aaa6f2d87966ade9aa38d4baf2a1be550767545e"},
+    {file = "flake8_bugbear-24.12.12.tar.gz", hash = "sha256:46273cef0a6b6ff48ca2d69e472f41420a42a46e24b2a8972e4f0d6733d12a64"},
 ]
 
 [package.dependencies]
-attrs = ">=19.2.0"
-flake8 = ">=3.0.0"
+attrs = ">=22.2.0"
+flake8 = ">=6.0.0"
+
+[package.extras]
+dev = ["coverage", "hypothesis", "hypothesmith (>=0.2)", "pre-commit", "pytest", "tox"]
 
 [[package]]
 name = "icontract"
@@ -602,14 +605,14 @@ testing = ["coverage", "pytest", "pytest-benchmark"]
 
 [[package]]
 name = "poethepoet"
-version = "0.34.0"
-description = "A task runner that works well with poetry."
+version = "0.35.0"
+description = "A task runner that works well with poetry and uv."
 optional = false
 python-versions = ">=3.9"
 groups = ["dev"]
 files = [
-    {file = "poethepoet-0.34.0-py3-none-any.whl", hash = "sha256:c472d6f0fdb341b48d346f4ccd49779840c15b30dfd6bc6347a80d6274b5e34e"},
-    {file = "poethepoet-0.34.0.tar.gz", hash = "sha256:86203acce555bbfe45cb6ccac61ba8b16a5784264484195874da457ddabf5850"},
+    {file = "poethepoet-0.35.0-py3-none-any.whl", hash = "sha256:bed5ae1fd63f179dfa67aabb93fa253d79695c69667c927d8b24ff378799ea75"},
+    {file = "poethepoet-0.35.0.tar.gz", hash = "sha256:b396ae862d7626e680bbd0985b423acf71634ce93a32d8b5f38340f44f5fbc3e"},
 ]
 
 [package.dependencies]
@@ -622,26 +625,26 @@ poetry-plugin = ["poetry (>=1.2.0,<3.0.0) ; python_version < \"4.0\""]
 
 [[package]]
 name = "pycodestyle"
-version = "2.9.1"
+version = "2.13.0"
 description = "Python style guide checker"
 optional = false
-python-versions = ">=3.6"
+python-versions = ">=3.9"
 groups = ["dev"]
 files = [
-    {file = "pycodestyle-2.9.1-py2.py3-none-any.whl", hash = "sha256:d1735fc58b418fd7c5f658d28d943854f8a849b01a5d0a1e6f3f3fdd0166804b"},
-    {file = "pycodestyle-2.9.1.tar.gz", hash = "sha256:2c9607871d58c76354b697b42f5d57e1ada7d261c261efac224b664affdc5785"},
+    {file = "pycodestyle-2.13.0-py2.py3-none-any.whl", hash = "sha256:35863c5974a271c7a726ed228a14a4f6daf49df369d8c50cd9a6f58a5e143ba9"},
+    {file = "pycodestyle-2.13.0.tar.gz", hash = "sha256:c8415bf09abe81d9c7f872502a6eee881fbe85d8763dd5b9924bb0a01d67efae"},
 ]
 
 [[package]]
 name = "pyflakes"
-version = "2.5.0"
+version = "3.3.2"
 description = "passive checker of Python programs"
 optional = false
-python-versions = ">=3.6"
+python-versions = ">=3.9"
 groups = ["dev"]
 files = [
-    {file = "pyflakes-2.5.0-py2.py3-none-any.whl", hash = "sha256:4579f67d887f804e67edb544428f264b7b24f435b263c4614f384135cea553d2"},
-    {file = "pyflakes-2.5.0.tar.gz", hash = "sha256:491feb020dca48ccc562a8c0cbe8df07ee13078df59813b83959cbdada312ea3"},
+    {file = "pyflakes-3.3.2-py2.py3-none-any.whl", hash = "sha256:5039c8339cbb1944045f4ee5466908906180f13cc99cc9949348d10f82a5c32a"},
+    {file = "pyflakes-3.3.2.tar.gz", hash = "sha256:6dfd61d87b97fba5dcfaaf781171ac16be16453be6d816147989e7f6e6a9576b"},
 ]
 
 [[package]]
@@ -661,24 +664,24 @@ windows-terminal = ["colorama (>=0.4.6)"]
 
 [[package]]
 name = "pyinstaller"
-version = "6.13.0"
+version = "6.14.1"
 description = "PyInstaller bundles a Python application and all its dependencies into a single package."
 optional = false
 python-versions = "<3.14,>=3.8"
 groups = ["dev"]
 files = [
-    {file = "pyinstaller-6.13.0-py3-none-macosx_10_13_universal2.whl", hash = "sha256:aa404f0b02cd57948098055e76ee190b8e65ccf7a2a3f048e5000f668317069f"},
-    {file = "pyinstaller-6.13.0-py3-none-manylinux2014_aarch64.whl", hash = "sha256:92efcf2f09e78f07b568c5cb7ed48c9940f5dad627af4b49bede6320fab2a06e"},
-    {file = "pyinstaller-6.13.0-py3-none-manylinux2014_i686.whl", hash = "sha256:9f82f113c463f012faa0e323d952ca30a6f922685d9636e754bd3a256c7ed200"},
-    {file = "pyinstaller-6.13.0-py3-none-manylinux2014_ppc64le.whl", hash = "sha256:db0e7945ebe276f604eb7c36e536479556ab32853412095e19172a5ec8fca1c5"},
-    {file = "pyinstaller-6.13.0-py3-none-manylinux2014_s390x.whl", hash = "sha256:92fe7337c5aa08d42b38d7a79614492cb571489f2cb0a8f91dc9ef9ccbe01ed3"},
-    {file = "pyinstaller-6.13.0-py3-none-manylinux2014_x86_64.whl", hash = "sha256:bc09795f5954135dd4486c1535650958c8218acb954f43860e4b05fb515a21c0"},
-    {file = "pyinstaller-6.13.0-py3-none-musllinux_1_1_aarch64.whl", hash = "sha256:589937548d34978c568cfdc39f31cf386f45202bc27fdb8facb989c79dfb4c02"},
-    {file = "pyinstaller-6.13.0-py3-none-musllinux_1_1_x86_64.whl", hash = "sha256:b7260832f7501ba1d2ce1834d4cddc0f2b94315282bc89c59333433715015447"},
-    {file = "pyinstaller-6.13.0-py3-none-win32.whl", hash = "sha256:80c568848529635aa7ca46d8d525f68486d53e03f68b7bb5eba2c88d742e302c"},
-    {file = "pyinstaller-6.13.0-py3-none-win_amd64.whl", hash = "sha256:8d4296236b85aae570379488c2da833b28828b17c57c2cc21fccd7e3811fe372"},
-    {file = "pyinstaller-6.13.0-py3-none-win_arm64.whl", hash = "sha256:d9f21d56ca2443aa6a1e255e7ad285c76453893a454105abe1b4d45e92bb9a20"},
-    {file = "pyinstaller-6.13.0.tar.gz", hash = "sha256:38911feec2c5e215e5159a7e66fdb12400168bd116143b54a8a7a37f08733456"},
+    {file = "pyinstaller-6.14.1-py3-none-macosx_10_13_universal2.whl", hash = "sha256:da559cfe4f7a20a7ebdafdf12ea2a03ea94d3caa49736ef53ee2c155d78422c9"},
+    {file = "pyinstaller-6.14.1-py3-none-manylinux2014_aarch64.whl", hash = "sha256:f040d1e3d42af3730104078d10d4a8ca3350bd1c78de48f12e1b26f761e0cbc3"},
+    {file = "pyinstaller-6.14.1-py3-none-manylinux2014_i686.whl", hash = "sha256:7b8813fb2d5a82ef4ceffc342ed9a11a6fc1ef21e68e833dbd8fedb8a188d3f5"},
+    {file = "pyinstaller-6.14.1-py3-none-manylinux2014_ppc64le.whl", hash = "sha256:e2cfdbc6dd41d19872054fc233da18856ec422a7fdea899b6985ae04f980376a"},
+    {file = "pyinstaller-6.14.1-py3-none-manylinux2014_s390x.whl", hash = "sha256:a4d53b3ecb5786b097b79bda88c4089186fc1498ef7eaa6cee57599ae459241e"},
+    {file = "pyinstaller-6.14.1-py3-none-manylinux2014_x86_64.whl", hash = "sha256:c48dd257f77f61ebea2d1fdbaf11243730f2271873c88d3b5ecb7869525d3bcb"},
+    {file = "pyinstaller-6.14.1-py3-none-musllinux_1_1_aarch64.whl", hash = "sha256:5b05cbb2ffc033b4681268159b82bac94b875475c339603c7e605f00a73c8746"},
+    {file = "pyinstaller-6.14.1-py3-none-musllinux_1_1_x86_64.whl", hash = "sha256:d5fd73757c8ea9adb2f9c1f81656335ba9890029ede3031835d768fde36e89f0"},
+    {file = "pyinstaller-6.14.1-py3-none-win32.whl", hash = "sha256:547f7a93592e408cbfd093ce9fd9631215387dab0dbf3130351d3b0b1186a534"},
+    {file = "pyinstaller-6.14.1-py3-none-win_amd64.whl", hash = "sha256:0794290b4b56ef9d35858334deb29f36ec1e1f193b0f825212a0aa5a1bec5a2f"},
+    {file = "pyinstaller-6.14.1-py3-none-win_arm64.whl", hash = "sha256:d9d99695827f892cb19644106da30681363e8ff27b8326ac8416d62890ab9c74"},
+    {file = "pyinstaller-6.14.1.tar.gz", hash = "sha256:35d5c06a668e21f0122178dbf20e40fd21012dc8f6170042af6050c4e7b3edca"},
 ]
 
 [package.dependencies]
@@ -686,7 +689,7 @@ altgraph = "*"
 macholib = {version = ">=1.8", markers = "sys_platform == \"darwin\""}
 packaging = ">=22.0"
 pefile = {version = ">=2022.5.30,<2024.8.26 || >2024.8.26", markers = "sys_platform == \"win32\""}
-pyinstaller-hooks-contrib = ">=2025.2"
+pyinstaller-hooks-contrib = ">=2025.4"
 pywin32-ctypes = {version = ">=0.2.1", markers = "sys_platform == \"win32\""}
 setuptools = ">=42.0.0"
 
@@ -939,4 +942,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.10,<=3.13.3"
-content-hash = "670ddf14d0945aaa26cfb88910a64406b0085502a4ea59329b61857e44a8b172"
+content-hash = "ba63ec1ca22bf03551d814c4a70f1d3d70a09daa88a07f41c7c00506dd59fefb"
