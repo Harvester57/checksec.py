@@ -22,13 +22,13 @@ pylddwrap = "^1.2.2"
 [tool.poetry.group.dev.dependencies]
 flake8 = "5.0.4"
 flake8-bugbear = "21.11.29"
-isort = "6.0.1"
-black = "25.1.0"
-mypy = "1.16.1"
-pytest = "8.4.1"
-coverage = { version = "7.9.2", extras = ["toml"] }
-poethepoet = "0.36.0"
-pyinstaller = "6.14.2"
+isort = "8.0.1"
+black = "26.5.1"
+mypy = "2.1.0"
+pytest = "9.0.3"
+coverage = { version = "7.14.1", extras = ["toml"] }
+poethepoet = "0.46.0"
+pyinstaller = "6.20.0"
 
 [build-system]
 requires = ["poetry-core"]
